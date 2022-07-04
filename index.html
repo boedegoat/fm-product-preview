@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/output.css" />
+    </head>
+    <body class="bg-cream min-h-screen px-4 flex flex-col items-center justify-center">
+        <div class="bg-white max-w-xl mx-auto overflow-hidden rounded-lg sm:flex">
+            <!-- IMAGE -->
+            <div class="w-full">
+                <img class="sm:hidden" src="./images/image-product-mobile.jpg" alt="product" />
+                <img
+                    class="hidden sm:block h-full object-cover"
+                    src="./images/image-product-desktop.jpg"
+                    alt="product"
+                />
+            </div>
+
+            <!-- BODY -->
+            <div class="p-5 w-full">
+                <span class="text-dark-grayish-blue tracking-[2px] text-sm">PERFUME</span>
+                <h1 class="font-fraunces text-3xl sm:text-4xl text-very-dark-blue mt-2">
+                    Gabrielle Essence Eau De Parfum
+                </h1>
+                <p class="text-dark-grayish-blue text-xs sm:text-base mt-3 sm:mt-4 leading-relaxed">
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                <!-- PRICE -->
+                <div class="mt-8 flex items-center">
+                    <span class="text-dark-cyan text-3xl font-fraunces">$149.99</span>
+                    <span class="ml-5 text-dark-grayish-blue line-through text-sm">$169.99</span>
+                </div>
+                <!--   Add to Cart -->
+                <button
+                    class="bg-dark-cyan hover:bg-[hsl(158,36%,30%)] transition-all text-white w-full mt-4 py-3 rounded-lg flex items-center justify-center active:scale-95 focus:ring focus:ring-dark-cyan focus:outline-none focus:ring-opacity-40"
+                >
+                    <img src="./images/icon-cart.svg" alt="cart" class="mr-2" />
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
